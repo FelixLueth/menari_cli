@@ -1,0 +1,13 @@
+.DS_Store
+/test
+/data
+
+# Will be deleted in the near future
+menari/menari_old.py
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
