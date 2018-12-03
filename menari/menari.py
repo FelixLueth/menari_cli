@@ -6,7 +6,7 @@ from random import randint
 def exercises(rounds, correct, not_correct):
   '''This function creates an exercise and gets the user input from the console.
   
-  returns -- list with the result of the correct solution
+  returns -- list with the result of correct and not correct solutions
   '''
   results = []
 
@@ -15,7 +15,7 @@ def exercises(rounds, correct, not_correct):
     y = randint(1,100)
     result = 0
 
-    random_seed = randint(1,3)
+    random_seed = randint(1,4)
 
     if random_seed == 1:
       result = x + y
@@ -28,6 +28,17 @@ def exercises(rounds, correct, not_correct):
     elif random_seed == 3:
       result = x * y
       print(str(x) + " * " + str(y) + " =")
+
+    elif random_seed == 4:
+      f = True
+      while(f):
+        if x % y == 0 and x > y:
+          result = x / y
+          print(str(x) + " / " + str(y) + " =")
+          f=False
+        else:
+          x = randint(1,50)
+          y = randint(1,50)
     
     user_result = int(input('Result: '))
 
